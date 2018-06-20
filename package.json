@@ -2,7 +2,7 @@
     "name": "mint-lang-support",
     "displayName": "Mint Language Support",
     "description": "Language support for Mint.",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "publisher": "thomas-crane",
     "icon": "images/mint-icon.png",
     "galleryBanner": {
@@ -45,6 +45,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/thomas-crane/mint"
+        "url": "https://github.com/thomas-crane/mint-language-support"
     }
 }
