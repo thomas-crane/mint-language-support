@@ -1,0 +1,18 @@
+{
+    "Fn_Declaration": {
+        "prefix": "func",
+        "body": [
+            "let ${1:name} be fn with ${2:args} returning ${3:body};",
+            "$0"
+        ],
+        "description": "A function declaration."
+    },
+    "Var_Declaration": {
+        "prefix": "var",
+        "body": [
+            "let ${1:name} be ${2:value};",
+            "$0"
+        ],
+        "description": "A variable declaration."
+    }
+}

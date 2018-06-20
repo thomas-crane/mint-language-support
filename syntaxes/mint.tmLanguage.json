@@ -1,0 +1,68 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Mint",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#storage"
+		},
+		{
+			"include": "#functions"
+		},
+		{
+			"include": "#constants"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.mint",
+					"match": "\\b(with|returning)\\b"
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.number-sign",
+					"match": "^#.+\\n"
+				}
+			]
+		},
+		"storage": {
+			"patterns": [
+				{
+					"name": "storage.type.mint",
+					"match": "\\b(let|be)\\b"
+				}
+			]
+		},
+		"functions": {
+			"patterns": [
+				{
+					"name": "support.function.mint",
+					"match": "\\b(fn|print)\\b"
+				},
+				{
+					"name": "entity.name.function.mint",
+					"match": "\\b([A-Za-z][A-Za-z0-9]*) of\\b"
+				}
+			]
+		},
+		"constants": {
+			"patterns": [
+				{
+					"name": "constant.numeric.mint",
+					"match": "\\b(\\d+(\\.\\d+)?)\\b"
+				}
+			]
+		}
+	},
+	"scopeName": "source.mint"
+}

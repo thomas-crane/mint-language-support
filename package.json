@@ -1,0 +1,50 @@
+{
+    "name": "mint-lang-support",
+    "displayName": "Mint Language Support",
+    "description": "Language support for Mint.",
+    "version": "0.2.0",
+    "publisher": "thomas-crane",
+    "icon": "images/mint-icon.png",
+    "galleryBanner": {
+        "theme": "light",
+        "color": "#d8f7c5"
+    },
+    "engines": {
+        "vscode": "^1.24.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "mint",
+                "aliases": [
+                    "Mint",
+                    "mint"
+                ],
+                "extensions": [
+                    ".mint"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "mint",
+                "scopeName": "source.mint",
+                "path": "./syntaxes/mint.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "mint",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/thomas-crane/mint"
+    }
+}
